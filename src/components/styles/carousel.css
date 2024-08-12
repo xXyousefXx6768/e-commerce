@@ -1,0 +1,7 @@
+.slick-slider{
+    width: 50%;
+}
+.carousel-container{
+    display: flex;
+    justify-content: center;
+}
