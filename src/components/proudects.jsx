@@ -62,7 +62,7 @@ const Products = () => {
   const [categories, setCategories] = useState([]);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [wishlist, setWishlist] = useState(JSON.parse(localStorage.getItem('wishlist')) || []);
-  const targetDate = '2025-02-22T23:59:59';
+  const targetDate = '2026-02-22T23:59:59';
   const { addItem } = useCart();
  let sales 
   const ref = React.useRef(null);
