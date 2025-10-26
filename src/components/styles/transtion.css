@@ -1,0 +1,12 @@
+.slide-in,
+.slide-out {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.slide-in {
+  transform-origin: bottom;
+}
+.slide-out {
+  transform-origin: top;
+}

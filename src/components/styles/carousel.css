@@ -1,0 +1,34 @@
+.carousel-container {
+  width: 80%; /* Full width of the page */
+  margin: 0 auto; /* Centered horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 100%; /* Make images stretch to the full width */
+  height:40%; /* Maintain aspect ratio */
+  object-fit:fill;/* Ensure the image covers the container */
+  border-radius: 0; /* Remove any rounded corners */
+}
+
+.slick-slider {
+  width: 90%;
+  height: 40% !important ;            /* Ensure slider spans full width */
+}
+
+.slick-list {
+  border-radius: 0; /* Remove border radius */
+  border: none; /* Remove border styles */
+}
+
+  
+  .slick-dots li button:before {
+    font-size: 12px; /* Adjust dot size */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ff6347; /* Active dot color */
+  }
+  
