@@ -8,49 +8,26 @@ import './styles/carousel.css'
 
 function Carousel() {
   const imgs = [img1, img2, img3, img4];
+
   const settings = {
-    className: '',
     dots: true,
     autoplay: true,
     infinite: true,
+    speed: 700,
     slidesToShow: 1,
-    autoplaySpeed: 2000,
     slidesToScroll: 1,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-
+    autoplaySpeed: 3000,
+    arrows: false,
+    pauseOnHover: true,
   };
 
   return (
-    <div className='carousel-container' style={{width: '70%;',marginTop:'3rem'}}>
+    <div className="carousel-wrapper">
       <Slider {...settings}>
         {imgs.map((item, index) => (
-          <img key={index} src={item} alt={`Slide ${index + 1}`} className="carousel-image" />
+          <div key={index} className="carousel-slide">
+            <img src={item} alt={`Slide ${index + 1}`} className="carousel-image" />
+          </div>
         ))}
       </Slider>
     </div>
